@@ -48,11 +48,6 @@ def over?(board)
 end
 
 def winner(board)
-  if board[won?(board)[0]] == "X"
-    "X"
-  elsif board[won?(board)[0]] == "O"
-    "O"
-  else
-    return nil
-  end
+  if won?(board)
+    board[won?(board)[0]]
 end
